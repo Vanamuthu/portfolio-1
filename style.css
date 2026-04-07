@@ -469,3 +469,27 @@ footer {
 footer p {
   text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+
+  /* Stack the two cards (Testing & QA / Tools) */
+  .about-containers {
+    flex-direction: column;
+  }
+
+  /* Make skills single column instead of 2 */
+  .article-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Improve spacing */
+  article {
+    justify-content: flex-start;
+  }
+
+  /* Reduce section margin for small screens */
+  section {
+    margin: 0 1.5rem;
+  }
+
+}
